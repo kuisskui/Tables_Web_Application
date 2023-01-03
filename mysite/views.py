@@ -3,4 +3,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def lobby(request):
-    return HttpResponse("Hello, Welcome Ploy!!!")
+    return render(request, "mysite/lobby.html")
