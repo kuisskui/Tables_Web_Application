@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+
 urlpatterns = [
     path("", views.lobby, name="lobby"),
     path("admin/", admin.site.urls),
     path("Tables/", include("Tables.urls")),
+    path("English/", include("English.urls")),
 ]
