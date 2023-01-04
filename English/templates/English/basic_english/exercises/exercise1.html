@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% load static %}
+        <script src="{% static 'English/checks.js' %}"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = function () {
+                var answer_key = "cadbacaabadcdadcbdac"
+                check_answer(answer_key)
+            }
+        </script>
+        <title>Exercise</title>
+    </head>
+
+    <body>
+        <h1>Part of Speech</h1>
+        <hr>
+        <h4>Identify the part of speech of the underlines word.</h4>
+        <ol>
+            <li><u>Wow</u>! Did you make that cake? It looks delicious!
+                <div><input type="radio" name="0" value="a">adverb</div>
+                <div><input type="radio" name="0" value="b">pronoun</div>
+                <div><input type="radio" name="0" value="c">interjection</div>
+                <div><input type="radio" name="0" value="d">conjunction</div>
+                <p id="0"></p>
+            </li>
+            <hr>
+            <li><u>Peter</u> lives in the big house at the end of the street.
+                <div><input type="radio" name="1" value="a">noun</div>
+                <div><input type="radio" name="1" value="b">adverb</div>
+                <div><input type="radio" name="1" value="c">adjective</div>
+                <div><input type="radio" name="1" value="d">pronoun</div>
+                <p id="1"></p>
+            </li>
+            <hr>
+            <li>Regular exercise will keep your body fit and <u>healthy</u>.
+                <div><input type="radio" name="2" value="a">noun</div>
+                <div><input type="radio" name="2" value="b">verb</div>
+                <div><input type="radio" name="2" value="c">adverb</div>
+                <div><input type="radio" name="2" value="d">adjective</div>
+                <p id="2"></p>
+            </li>
+            <hr>
+            <li>Most parents do everything <u>they</u> can for their children.
+                <div><input type="radio" name="3" value="a">noun</div>
+                <div><input type="radio" name="3" value="b">pronoun</div>
+                <div><input type="radio" name="3" value="c">adjective</div>
+                <div><input type="radio" name="3" value="d">preposition</div>
+                <p id="3"></p>
+            </li>
+            <hr>
+            <li>Bad weather conditions <u>caused</u> a number of accidents.
+                <div><input type="radio" name="4" value="a">verb</div>
+                <div><input type="radio" name="4" value="b">noun</div>
+                <div><input type="radio" name="4" value="c">adverb</div>
+                <div><input type="radio" name="4" value="d">adjective</div>
+                <p id="4"></p>
+            </li>
+            <hr>
+            <li>Robert and Alex never let anyone tell <u>them</u> what to do.
+                <div><input type="radio" name="5" value="a">noun</div>
+                <div><input type="radio" name="5" value="b">adjective</div>
+                <div><input type="radio" name="5" value="c">pronoun</div>
+                <div><input type="radio" name="5" value="d">conjunction</div>
+                <p id="5"></p>
+            </li>
+            <hr>
+            <li>The student received a letter from his teacher <u>yesterday</u>.
+                <div><input type="radio" name="6" value="a">adverb</div>
+                <div><input type="radio" name="6" value="b">adjective</div>
+                <div><input type="radio" name="6" value="c">preposition</div>
+                <div><input type="radio" name="6" value="d">conjunction</div>
+                <p id="6"></p>
+            </li>
+            <hr>
+            <li>John took his <u>girlfriend</u> to a great little cafe this weekend.
+                <div><input type="radio" name="7" value="a">noun</div>
+                <div><input type="radio" name="7" value="b">adverb</div>
+                <div><input type="radio" name="7" value="c">adjective</div>
+                <div><input type="radio" name="7" value="d">pronoun</div>
+                <p id="7"></p>
+            </li>
+            <hr>
+            <li>They did not expect <u>you</u> to finish the assignment on time
+                <div><input type="radio" name="8" value="a">noun</div>
+                <div><input type="radio" name="8" value="b">pronoun</div>
+                <div><input type="radio" name="8" value="c">adjective</div>
+                <div><input type="radio" name="8" value="d">preposition</div>
+                <p id="8"></p>
+            </li>
+            <hr>
+            <li>The kids <u>wanted</u> to see an adventure movie last Saturday.
+                <div><input type="radio" name="9" value="a">verb</div>
+                <div><input type="radio" name="9" value="b">noun</div>
+                <div><input type="radio" name="9" value="c">adverb</div>
+                <div><input type="radio" name="9" value="d">adjective</div>
+                <p id="9"></p>
+            </li>
+            <hr>
+            <li>We have invited the boss, <u>but</u> he may decide not to come.
+                <div><input type="radio" name="10" value="a">verb</div>
+                <div><input type="radio" name="10" value="b">adjective</div>
+                <div><input type="radio" name="10" value="c">preposition</div>
+                <div><input type="radio" name="10" value="d">conjunction</div>
+                <p id="10"></p>
+            </li>
+            <hr>
+            <li>Sandra waited for her boyfriend <u>outside</u> the movie theater.
+                <div><input type="radio" name="11" value="a">adjective</div>
+                <div><input type="radio" name="11" value="b">adverb</div>
+                <div><input type="radio" name="11" value="c">preposition</div>
+                <div><input type="radio" name="11" value="d">conjunction</div>
+                <p id="11"></p>
+            </li>
+            <hr>
+            <li><u>Oh</u>, and don't forget to turn off the lights on your way out.
+                <div><input type="radio" name="12" value="a">adverb</div>
+                <div><input type="radio" name="12" value="b">pronoun</div>
+                <div><input type="radio" name="12" value="c">conjunction</div>
+                <div><input type="radio" name="12" value="d">interjection</div>
+                <p id="12"></p>
+            </li>
+            <hr>
+            <li>My daughter <u>remembers</u> her first day at school very clearly.
+                <div><input type="radio" name="13" value="a">verb</div>
+                <div><input type="radio" name="13" value="b">adverb</div>
+                <div><input type="radio" name="13" value="c">adjective</div>
+                <div><input type="radio" name="13" value="d">preposition</div>
+                <p id="13"></p>
+            </li>
+            <hr>
+            <li>The company has had a lot of problems <u>during</u> the past year.
+                <div><input type="radio" name="14" value="a">noun</div>
+                <div><input type="radio" name="14" value="b">pronoun</div>
+                <div><input type="radio" name="14" value="c">conjunction</div>
+                <div><input type="radio" name="14" value="d">preposition</div>
+                <p id="14"></p>
+            </li>
+            <hr>
+            <li>The <u>English</u> language contains hundreds of thousands of words.
+                <div><input type="radio" name="15" value="a">noun</div>
+                <div><input type="radio" name="15" value="b">adverb</div>
+                <div><input type="radio" name="15" value="c">adjective</div>
+                <div><input type="radio" name="15" value="d">preposition</div>
+                <p id="15"></p>
+            </li>
+            <hr>
+            <li>Before you decide, you should consider their offer more <u>carefully</u>.
+                <div><input type="radio" name="16" value="a">verb</div>
+                <div><input type="radio" name="16" value="b">adverb</div>
+                <div><input type="radio" name="16" value="c">adjective</div>
+                <div><input type="radio" name="16" value="d">conjunction</div>
+                <p id="16"></p>
+            </li>
+            <hr>
+            <li>He doesn't want to go shopping <u>because</u> he doesn't have money.
+                <div><input type="radio" name="17" value="a">adjective</div>
+                <div><input type="radio" name="17" value="b">pronoun</div>
+                <div><input type="radio" name="17" value="c">preposition</div>
+                <div><input type="radio" name="17" value="d">conjunction</div>
+                <p id="17"></p>
+            </li>
+            <hr>
+            <li>The police officer waved his hand as a <u>signal</u> for the driver to stop.
+                <div><input type="radio" name="18" value="a">noun</div>
+                <div><input type="radio" name="18" value="b">verb</div>
+                <div><input type="radio" name="18" value="c">adverb</div>
+                <div><input type="radio" name="18" value="d">adjective</div>
+                <p id="18"></p>
+            </li>
+            <hr>
+            <li>It is natural for children to be <u>curious</u> and ask questions all the time.
+                <div><input type="radio" name="19" value="a">noun</div>
+                <div><input type="radio" name="19" value="b">adverb</div>
+                <div><input type="radio" name="19" value="c">adjective</div>
+                <div><input type="radio" name="19" value="d">pronoun</div>
+                <p id="19"></p>
+            </li>
+            <hr>
+        </ol>
+    </body>
+
+</html>

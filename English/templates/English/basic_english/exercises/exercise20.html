@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% load static %}
+        <script src="{% static 'English/checks.js' %}"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = function () {
+                var answer_key = "bcadcbddcbddbcdadbcd"
+                check_answer(answer_key)
+            }
+        </script>
+        <title>Exercise</title>
+    </head>
+
+    <body>
+        <h1>QUESTION TAG</h1>
+        <hr>
+        <h4>Choose the best answer to complete each missing part.</h4>
+        <ol>
+            <li>Return these books to the library, ____?
+                <div><input type="radio" name="0" value="a">do you</div>
+                <div><input type="radio" name="0" value="b">will you</div>
+                <div><input type="radio" name="0" value="c">aren't you</div>
+                <div><input type="radio" name="0" value="d">didn't you</div>
+                <p id="0"></p>
+            </li>
+            <hr>
+            <li>Andrew ate the last piece of cake, ____?
+                <div><input type="radio" name="1" value="a">did he</div>
+                <div><input type="radio" name="1" value="b">does he</div>
+                <div><input type="radio" name="1" value="c">didn't he</div>
+                <div><input type="radio" name="1" value="d">doesn't he</div>
+                <p id="1"></p>
+            </li>
+            <hr>
+            <li>Helen hasn't finished her dinner yet, ____?
+                <div><input type="radio" name="2" value="a">has she</div>
+                <div><input type="radio" name="2" value="b">did she</div>
+                <div><input type="radio" name="2" value="c">hasn't she</div>
+                <div><input type="radio" name="2" value="d">didn't she</div>
+                <p id="2"></p>
+            </li>
+            <hr>
+            <li>The children were having a good time, ____?
+                <div><input type="radio" name="3" value="a">did they</div>
+                <div><input type="radio" name="3" value="b">were they</div>
+                <div><input type="radio" name="3" value="c">didn't they</div>
+                <div><input type="radio" name="3" value="d">weren't they</div>
+                <p id="3"></p>
+            </li>
+            <hr>
+            <li>Robert hasn't got a new digital camera, ____?
+                <div><input type="radio" name="4" value="a">did he</div>
+                <div><input type="radio" name="4" value="b">didn't he</div>
+                <div><input type="radio" name="4" value="c">has he</div>
+                <div><input type="radio" name="4" value="d">hasn't he</div>
+                <p id="4"></p>
+            </li>
+            <hr>
+            <li>Let's invite these people to our concert, ____?
+                <div><input type="radio" name="5" value="a">will you</div>
+                <div><input type="radio" name="5" value="b">shall we</div>
+                <div><input type="radio" name="5" value="c">don't you</div>
+                <div><input type="radio" name="5" value="d">shouldn't we</div>
+                <p id="5"></p>
+            </li>
+            <hr>
+            <li>James and Simon have been to London, ____?
+                <div><input type="radio" name="6" value="a">were they</div>
+                <div><input type="radio" name="6" value="b">have they</div>
+                <div><input type="radio" name="6" value="c">weren't they</div>
+                <div><input type="radio" name="6" value="d">haven't they</div>
+                <p id="6"></p>
+            </li>
+            <hr>
+            <li>I am more hard-working than my brother, ____?
+                <div><input type="radio" name="7" value="a">do I</div>
+                <div><input type="radio" name="7" value="b">am I</div>
+                <div><input type="radio" name="7" value="c">don't I</div>
+                <div><input type="radio" name="7" value="d">aren't I</div>
+                <p id="7"></p>
+            </li>
+            <hr>
+            <li>Let me have a look at your new cellphone, ____?
+                <div><input type="radio" name="8" value="a">do you</div>
+                <div><input type="radio" name="8" value="b">did you</div>
+                <div><input type="radio" name="8" value="c">will you</div>
+                <div><input type="radio" name="8" value="d">have you</div>
+                <p id="8"></p>
+            </li>
+            <hr>
+            <li>There isn't a lot to do at night in this town, ____?
+                <div><input type="radio" name="9" value="a">is it</div>
+                <div><input type="radio" name="9" value="b">is there</div>
+                <div><input type="radio" name="9" value="c">isn't it</div>
+                <div><input type="radio" name="9" value="d">isn't there</div>
+                <p id="9"></p>
+            </li>
+            <hr>
+            <li>Everyone will come to the party tomorrow, ____?
+                <div><input type="radio" name="10" value="a">do you</div>
+                <div><input type="radio" name="10" value="b">will they</div>
+                <div><input type="radio" name="10" value="c">don't you</div>
+                <div><input type="radio" name="10" value="d">won't they</div>
+                <p id="10"></p>
+            </li>
+            <hr>
+            <li>Your girlfriend always talks about exercising, ____?
+                <div><input type="radio" name="11" value="a">is she</div>
+                <div><input type="radio" name="11" value="b">does she</div>
+                <div><input type="radio" name="11" value="c">isn't she</div>
+                <div><input type="radio" name="11" value="d">doesn't she</div>
+                <p id="11"></p>
+            </li>
+            <hr>
+            <li>The kids won't tell this secret to anyone else, ____?
+                <div><input type="radio" name="12" value="a">do they</div>
+                <div><input type="radio" name="12" value="b">will they</div>
+                <div><input type="radio" name="12" value="c">don't they</div>
+                <div><input type="radio" name="12" value="d">won't they</div>
+                <p id="12"></p>
+            </li>
+            <hr>
+            <li>These people have parked in the wrong place, ____?
+                <div><input type="radio" name="13" value="a">have they</div>
+                <div><input type="radio" name="13" value="b">did they</div>
+                <div><input type="radio" name="13" value="c">haven't they</div>
+                <div><input type="radio" name="13" value="d">didn't they</div>
+                <p id="13"></p>
+            </li>
+            <hr>
+            <li>Your neighbor rides his bike to work every day, ____?
+                <div><input type="radio" name="14" value="a">is he</div>
+                <div><input type="radio" name="14" value="b">does he</div>
+                <div><input type="radio" name="14" value="c">isn't he</div>
+                <div><input type="radio" name="14" value="d">doesn't he</div>
+                <p id="14"></p>
+            </li>
+            <hr>
+            <li>You didn't want to spend the weekend at home, ____?
+                <div><input type="radio" name="15" value="a">did you</div>
+                <div><input type="radio" name="15" value="b">were you</div>
+                <div><input type="radio" name="15" value="c">didn't you</div>
+                <div><input type="radio" name="15" value="d">weren't you</div>
+                <p id="15"></p>
+            </li>
+            <hr>
+            <li>Your sister has been married for a couple of years, ____?
+                <div><input type="radio" name="16" value="a">did she</div>
+                <div><input type="radio" name="16" value="b">has she</div>
+                <div><input type="radio" name="16" value="c">didn't she</div>
+                <div><input type="radio" name="16" value="d">hasn't she</div>
+                <p id="16"></p>
+            </li>
+            <hr>
+            <li>Alex wasn't studying English at 8 o'clock yesterday, ____?
+                <div><input type="radio" name="17" value="a">did he</div>
+                <div><input type="radio" name="17" value="b">was he</div>
+                <div><input type="radio" name="17" value="c">didn't he</div>
+                <div><input type="radio" name="17" value="d">wasn't he</div>
+                <p id="17"></p>
+            </li>
+            <hr>
+            <li>There were around ninety people at the ceremony, ____?
+                <div><input type="radio" name="18" value="a">were there</div>
+                <div><input type="radio" name="18" value="b">did there</div>
+                <div><input type="radio" name="18" value="c">weren't there</div>
+                <div><input type="radio" name="18" value="d">didn't there</div>
+                <p id="18"></p>
+            </li>
+            <hr>
+            <li>Something has been bothering you for several days, ____?
+                <div><input type="radio" name="19" value="a">is it</div>
+                <div><input type="radio" name="19" value="b">has it</div>
+                <div><input type="radio" name="19" value="c">isn't it</div>
+                <div><input type="radio" name="19" value="d">hasn't it</div>
+                <p id="19"></p>
+            </li>
+            <hr>
+        </ol>
+    </body>
+
+</html>
