@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView
+from django.urls import reverse
 from .models import *
 # Create your views here.
 
@@ -22,10 +23,10 @@ class VocabularyView(ListView):
 class VocabularyCreateView(CreateView):
     model = Vocabulary
     template_name = "English/vocabulary/create.html"
-    field = ["word" "word_class"]
+    fields = ["word", "word_class"]
 
     def get_success_url(self) -> str:
-        return super().get_success_url()
+        return reverse("English:vocabulary")
 
 
 def exercise(request, unit):
