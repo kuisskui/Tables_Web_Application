@@ -1,11 +1,13 @@
 from django.urls import path
-from . import views
+from .views import *
 
 
 app_name = "English"
 urlpatterns = [
-    path("", views.home, name="home"),
-    path("basic_english/", views.basic_english, name="basic_english"),
-    path("basic_english/exercise/<int:unit>", views.exercise, name="exercise"),
-    path("basic_english/content/<int:unit>", views.content, name="content"),
+    path("", home, name="home"),
+    path("vocabulary/", VocabularyView.as_view(), name="vocabulary"),
+    path("vocabulary/create", VocabularyCreateView.as_view(), name="create_vocabulary"),
+    path("basic_english/", basic_english, name="basic_english"),
+    path("basic_english/exercise/<int:unit>", exercise, name="exercise"),
+    path("basic_english/content/<int:unit>", content, name="content"),
 ]
